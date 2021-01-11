@@ -1,0 +1,38 @@
+<!-- 
+ * Project: Milestone 1
+ * Module Name: User Registration
+ * Author: Ricardo Monreal
+ * Date: December 20, 2020
+ * Synopsis: this page takes info from user and sends provided info to pageHandler.php to be processed and sent to db.
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blog Registration Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+   
+  </head>
+  <body>
+    <div class="main-block">
+      <h1>Registration</h1>
+      <form action="pageHandler.php" method="post">
+        <hr>
+       
+        <input type="email" name="EMAIL" id="EMAIL" placeholder="Email" required/>
+        
+        <input type="text" name="USERNAME" id="USERNAME" placeholder="Username" required/>
+        
+        <input type="password" name="PASSWORD" id="PASSWORD" placeholder="Password" required/>
+       
+        <hr>
+        <div class="btn-block">
+         
+          <button type="submit" value="Submit">Register</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
