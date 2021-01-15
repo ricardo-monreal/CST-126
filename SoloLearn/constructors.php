@@ -22,7 +22,7 @@
 		// used for clean up / closing connections
 		public function __destruct() 
 		{
-			echo 'desctructor ran...';
+			echo 'Deconstructor running';
 		}
 
 	}
