@@ -23,9 +23,10 @@ $result = $link->query($sqlQuery);
 $rowsReturned = $result->num_rows;
 
 if($rowsReturned === 1) {
-    echo '<script>alert("Login was successful")
+	include ('loginResponse.php');
+    //echo '<script>alert("Login was successful")
 //        window.location.href="dashboard.php";
-        </script>';
+      //  </script>';
 } elseif($rowsReturned === 0) {
     echo '<script>alert("Login Failed")</script>';
 } elseif ($rowsReturned > 2){
