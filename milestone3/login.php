@@ -27,7 +27,7 @@
 
             <button type="submit" value="Submit">login</button>
 
-            <a href="index.php">Main Menu</a>
+            <p> Don't have an account? Register </p><a href="register.php">Here</a>
 
 
 

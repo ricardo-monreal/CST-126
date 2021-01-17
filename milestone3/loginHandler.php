@@ -24,7 +24,7 @@ if ($link) {
 			//echo "Login successful<br>";
 			$row = mysqli_fetch_assoc($result);
 			$_SESSION['USERNAME'] = $row['USERNAME'];
-			$_SESSION['USER_ID'] = $row['USER_ID'];
+			$_SESSION['ID'] = $row['ID'];
 			header('Location: index.php');
 		}
 		else {

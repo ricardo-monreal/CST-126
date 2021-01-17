@@ -34,9 +34,12 @@ if (empty($_POST['FIRST_NAME'])) {
 
     $link = dbConnect();
 
-    $query = "INSERT INTO users (FIRST_NAME, LAST_NAME, USERNAME, PASSWORD) VALUES ('$FIRST_NAME', '$LAST_NAME', '$USERNAME', '$PASSWORD')";
+    //$query = "INSERT INTO users (FIRST_NAME, LAST_NAME, USERNAME, PASSWORD) VALUES ('$FIRST_NAME', '$LAST_NAME', '$USERNAME', '$PASSWORD')";
+
+	$query = "INSERT INTO users (`ID`, `FIRST_NAME`, `LAST_NAME`, `USERNAME`, `PASSWORD`) VALUES (NULL, '$FIRST_NAME', '$LAST_NAME', '$USERNAME', '$PASSWORD')";
     if (mysqli_query($link, $query)) {
         echo "New user recorded successfully!";
+	    header("Refresh: 3; url=index.php");
     } else {
         echo "Error: " . $query . "<br>" . mysqli_errno($link);
     }

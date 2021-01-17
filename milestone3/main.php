@@ -30,7 +30,8 @@
             <span class="menu-item"><a href="login.php">Login</a></span>
 		<?php else: ?>
             <span class="menu-item">Welcome <?php echo ucfirst($_SESSION['USERNAME']).'!' . ''; ?> '<container><a href="logout.php">Logout</a></span></container>'
-		<?php endif; ?>
+		<?php endif;
+		?>
 
     <ul class="nav">
         <li class="nav-item">
@@ -42,6 +43,9 @@
 
 
     </ul>
+    <?php
+
+    ?>
 
     <!--span class="menu-item"><a href="index.php?pageNumber=1">Search</a> </span> | <span class="menu-item"><a href="index.php?pageNumber=2">Add New Recipe</a></span>-->
 </div>
