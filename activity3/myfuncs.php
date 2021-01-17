@@ -1,8 +1,13 @@
+<!--
+ * Project: Activity 3
+ * Author: Ricardo Monreal
+ * Date: January 14, 2021
+ -->
 <?php
     // database info
 	$user = 'root';
 	$password = 'root';
-	$db = 'activity1';
+	$db = 'activity3';
 	$host = 'localhost';
 
     function dbConnect()
@@ -14,6 +19,8 @@
 	    if ($link->connect_error) {
 		    echo $link->connect_error;
 	    }
+
+	    // return database connection
 	    return $link;
     }
 

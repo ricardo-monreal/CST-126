@@ -2,7 +2,6 @@
  * Project: Activity 3
  * Author: Ricardo Monreal
  * Date: January 14, 2021
-sources: https://www.geeksforgeeks.org/how-to-pop-an-alert-message-box-using-php/
 -->
 
 <?php

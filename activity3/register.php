@@ -7,9 +7,7 @@
  -->
 <!DOCTYPE html>
 <html lang="en">
-<title>
-    Register
-</title>
+<title>Register</title>
 
 <?php include('header.php'); ?>
 

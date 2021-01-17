@@ -4,7 +4,12 @@
  * Project: Activity 3
  * Author: Ricardo Monreal
  * Date: January 14, 2021
+ *
+ * This is used as a template file
  -->
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
