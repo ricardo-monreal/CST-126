@@ -29,7 +29,7 @@
 			?>
             <span class="menu-item"><a href="login.php">Login</a></span>
 		<?php else: ?>
-            <span class="menu-item">Welcome <?php echo ucfirst($_SESSION['USERNAME']).'!' . ''; ?> '<container><a href="logout.php">Logout</a></span></container>'
+            <span class="menu-item">Welcome <?php echo ucfirst($_SESSION['USERNAME']).'!' . ''; ?> <container><a href="logout.php">Logout</a></span></container>
 		<?php endif;
 		?>
 

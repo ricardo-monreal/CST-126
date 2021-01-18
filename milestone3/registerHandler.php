@@ -3,7 +3,18 @@
  * Author: Ricardo Monreal
  * Date: January 17, 2021
  -->
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h2 {
+        text-align: center;
+    }
+</style>
 
+
+
+
+<?php include('header.php'); ?>
 <?php
 
 
@@ -29,7 +40,12 @@ if (empty($_POST['FIRST_NAME'])) {
     if (mysqli_connect_errno()) {
         die('Connection Error: (' . mysqli_connect_errno() . ') ' . mysqli_connect_error());
     } else {
+
+
         echo "Hello " . $_POST["FIRST_NAME"] . $_POST["LAST_NAME"] . ": Your username is " . $_POST["USERNAME"] . "<br>";
+
+
+
     }
 
     $link = dbConnect();
@@ -48,3 +64,6 @@ if (empty($_POST['FIRST_NAME'])) {
 }
 
 ?>
+
+<?php include('footer.php'); ?>
+</html>

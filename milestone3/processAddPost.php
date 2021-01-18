@@ -1,3 +1,19 @@
+<!--
+ * Project: Milestone 3
+ * Author: Ricardo Monreal
+ * Date: January 17, 2021
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h2 {
+        text-align: center;
+    }
+</style>
+
+<?php include('header.php'); ?>
+
 <?php
 
 	session_start();
@@ -15,7 +31,7 @@
 	if ($link) {
 		$result = mysqli_query($link, $sql_statement);
 		if ($result){
-			echo "The post has been added to your blog!";
+			echo "<h2>The post has been added to your blog!</h2>";
 			header("Refresh: 3; url=index.php");
 		}
 		else {
@@ -25,3 +41,8 @@
 	else {
 		echo "Error connecting " . mysqli_connect_error();
 	}
+    ?>
+	<?php include('footer.php'); ?>
+</html>
+
+</html>

@@ -9,13 +9,19 @@
 <html lang="en">
 
             <style>
-                h2.welcomeTest{
+                h1{
+                    text-align: center;
+                    padding: 100px;
+                    align-content: center;
+                }
+
+                p {
                     text-align: center;
                     padding-top: 50px;
+
                 }
-                p.welcomeTest {
-                    text-align: center;
-                    padding-top: 20px;
+                .container {
+                    padding-top: 50px;
                 }
             </style>
     <?php include('header.php'); ?>
@@ -25,7 +31,10 @@
 	            session_start();
 
 	            if (!isset($_SESSION['USERNAME'])) {
-		            echo "<h2>Please login first <a href='login.php'> here </a></h2>";
+		            echo "<h1>Welcome to the CST-126 Milestone Blog!</h1>";
+		            '<br>';
+		            '<br>';
+		            echo "<p>Please login <a href='login.php'>here</a> - Don't have an account? Register <a href='register.php'>here</a></p>";
 		            exit;
 	            }
 
@@ -42,11 +51,9 @@
 				            require_once 'addPostForm.php';
 				            break;
 			            case 2:
-				            require_once 'showAddForm.php';
+				            require_once 'searchPostForm.php';
 				            break;
-			            case 3:
-				            require_once 'showMainWelcome.php';
-				            break;
+
 		            }
 	            }
 	            else {
