@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jan 18, 2021 at 12:12 AM
+-- Generation Time: Jan 25, 2021 at 01:43 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `milestone3`
+-- Database: `milestone4`
 --
 
 -- --------------------------------------------------------
@@ -41,8 +41,6 @@ CREATE TABLE `blog_posts` (
 
 INSERT INTO `blog_posts` (`idblog_posts`, `blog_post_title`, `blog_post`, `users_ID`) VALUES
 (1, 'Test Post', 'This is to test the database connection. ', 14),
-(2, 'Meridith test', 'test post', 17),
-(3, 'Meridith test', 'test post', 17),
 (4, 'test', 'testing database connection', 22),
 (5, 'test 2', 'testing redirecting to index page', 22),
 (6, 'Test HTML Editor', '<p><strong>Hello!</strong></p>\r\n<p>Testing HTML editor. </p>\r\n<p>&nbsp;</p>', 22),
@@ -60,21 +58,21 @@ CREATE TABLE `users` (
   `FIRST_NAME` varchar(100) NOT NULL,
   `LAST_NAME` varchar(100) NOT NULL,
   `USERNAME` varchar(50) NOT NULL,
-  `PASSWORD` varchar(50) NOT NULL
+  `PASSWORD` varchar(50) NOT NULL,
+  `role` varchar(45) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`ID`, `FIRST_NAME`, `LAST_NAME`, `USERNAME`, `PASSWORD`) VALUES
-(14, 'Toby ', 'Flenderson', 'toby', 'pass7'),
-(17, 'Meridith', 'Palmer', 'meridith', 'pass'),
-(21, 'testone', 'test', 'testone', 'pass'),
-(22, 'Darth', 'Vader', 'vader', 'pass'),
-(24, 'Toby', 'Flenderson', 'toby', 'pass'),
-(25, 'Michael', 'Scott', 'michael', 'pass'),
-(26, 'Dwight', 'Schrute', 'dwight', 'pass');
+INSERT INTO `users` (`ID`, `FIRST_NAME`, `LAST_NAME`, `USERNAME`, `PASSWORD`, `role`) VALUES
+(14, 'Toby ', 'Flenderson', 'toby', 'pass7', NULL),
+(17, 'Meridith', 'Palmer', 'meridith', 'pass', NULL),
+(21, 'testone', 'test', 'testone', 'pass', NULL),
+(22, 'Darth', 'Vader', 'vader', 'pass', NULL),
+(25, 'Michael', 'Scott', 'michael', 'pass', 'admin'),
+(26, 'Dwight', 'Schrute', 'dwight', 'pass', NULL);
 
 --
 -- Indexes for dumped tables
@@ -107,7 +105,7 @@ ALTER TABLE `blog_posts`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- Constraints for dumped tables

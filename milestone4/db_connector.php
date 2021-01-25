@@ -1,3 +1,8 @@
+<!--
+ * Project: Milestone 4
+ * Author: Ricardo Monreal
+ * Date: January 24, 2021
+ -->
 <?php
 	ini_set('display_errors', 1);
 	ini_set('display_startup_errors', 1);

@@ -1,4 +1,8 @@
-
+<!--
+ * Project: Milestone 4
+ * Author: Ricardo Monreal
+ * Date: January 24, 2021
+ -->
 <footer class="bg-dark text-center text-lg-start fixed-bottom">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: #808080">

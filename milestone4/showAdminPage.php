@@ -1,3 +1,8 @@
+<!--
+ * Project: Milestone 4
+ * Author: Ricardo Monreal
+ * Date: January 24, 2021
+ -->
 <style>
     .post-container {
         text-align: center;
