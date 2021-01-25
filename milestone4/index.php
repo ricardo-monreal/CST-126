@@ -41,7 +41,7 @@
 	            if (isset($_GET['pageNumber']))
 		            $menuChoice = $_GET['pageNumber'];
 	            else
-		            $menuChoice = 3;
+		            $menuChoice = 0;
 
 	            if ( $_SESSION['USERNAME']) {
 		            require_once 'main.php';
@@ -52,6 +52,9 @@
 				            break;
 			            case 2:
 				            require_once 'searchPostForm.php';
+				            break;
+			            case 3:
+				            require_once 'showAdminPage.php';
 				            break;
 
 		            }

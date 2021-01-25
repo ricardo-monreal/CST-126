@@ -25,6 +25,7 @@ if ($link) {
 			$row = mysqli_fetch_assoc($result);
 			$_SESSION['USERNAME'] = $row['USERNAME'];
 			$_SESSION['ID'] = $row['ID'];
+			$_SESSION['role'] = $row['role'];
 			header('Location: index.php');
 		}
 		else {

@@ -40,6 +40,12 @@
         <li class="nav-item">
             <a class="nav-link" href="index.php?pageNumber=2">Search Posts</a>
         </li>
+        <?php if ($_SESSION['role'] == 'admin'):?>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.php?pageNumber=3">Administrator</a>
+        </li>
+        <?php endif; ?>
+
 
 
     </ul>

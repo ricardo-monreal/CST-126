@@ -6,7 +6,7 @@
 	$servername = "localhost";
 	$username = "root";
 	$password = "root";
-	$dbname = "milestone3";
+	$dbname = "milestone4";
 
 // Create connection
 	$link = mysqli_connect($servername, $username, $password, $dbname);
