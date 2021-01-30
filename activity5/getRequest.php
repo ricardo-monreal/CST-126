@@ -8,7 +8,7 @@
 	echo "Mode: " . $mode;
     echo "<br>";
 
-	if( $_GET["name"] || $_GET["email"] || $_GET["contact"])
+	if( $_GET["name"] || $_GET["email"] || $_GET["blog_post"])
 	{
 		echo "Welcome: ". $_GET['name']. "<br />";
 		echo "Your Email is: ". $_GET["email"]. "<br />";
