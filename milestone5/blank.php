@@ -1,9 +1,9 @@
 <?php
 ?>
 <!--
- * Project: Milestone 4
+ * Project: Milestone 5
  * Author: Ricardo Monreal
- * Date: January 24, 2021
+ * Date: January 31, 2021
  *
  * This is used as a template file
  -->

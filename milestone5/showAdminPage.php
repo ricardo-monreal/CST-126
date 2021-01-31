@@ -1,7 +1,7 @@
 <!--
- * Project: Milestone 4
+ * Project: Milestone 5
  * Author: Ricardo Monreal
- * Date: January 24, 2021
+ * Date: January 31, 2021
  -->
 <style>
     .post-container {
@@ -37,10 +37,17 @@
 	                    ?></div>
                 <?php
 				?>
+                <!-- Admin actions redirects -->
+                <form action="showEditForm.php">
+                    <input type="hidden" name="postID" value="<?php echo $row['idblog_posts'];?>">
+                    <button type="submit">Edit</button>
+                </form>
 				<form action="processDeletePost.php">
 					<input type="hidden" name="postID" value="<?php echo $row['idblog_posts'];?>">
 					<button type="submit">Delete</button>
 				</form>
+
+
 				<?php
 				echo "<hr>";
 		}

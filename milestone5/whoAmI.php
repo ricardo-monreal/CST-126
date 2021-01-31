@@ -1,7 +1,7 @@
 <!--
- * Project: Milestone 4
+ * Project: Milestone 5
  * Author: Ricardo Monreal
- * Date: January 24, 2021
+ * Date: January 31, 2021
  -->
 <?php
 	require_once 'db_connector.php';
