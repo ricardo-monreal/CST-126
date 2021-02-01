@@ -9,7 +9,7 @@
 <html lang="en">
 
 <style>
-    h2.welcomeTest{
+    h2, h3{
         text-align: center;
         padding-top: 50px;
     }
@@ -20,9 +20,19 @@
     .container {
         text-align: right;
     }
+
+     .post-container {
+         text-align: center;
+     }
+    button {
+        width: 100px;
+    }
+
+</style>
 </style>
 
 <h1>My Blog</h1>
+<!-- User Menu -->
 <div class="menu-container">
 	<?php
 		if (!isset($_SESSION['USERNAME'])):
@@ -40,21 +50,20 @@
         <li class="nav-item">
             <a class="nav-link" href="index.php?pageNumber=2">Search Posts</a>
         </li>
+        <!-- Menu item will only show for Admin users -->
         <?php if ($_SESSION['role'] == 'admin'):?>
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.php?pageNumber=3">Administrator</a>
         </li>
         <?php endif; ?>
 
-
-
     </ul>
     <?php
 
     ?>
 
-    <!--span class="menu-item"><a href="index.php?pageNumber=1">Search</a> </span> | <span class="menu-item"><a href="index.php?pageNumber=2">Add New Recipe</a></span>-->
 </div>
+
 
 
 

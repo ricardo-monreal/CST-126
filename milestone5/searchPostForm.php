@@ -5,12 +5,13 @@
  -->
 <?php
 ?>
-<style>
-    h2 {
-        text-align: center;
-    }
-</style>
-<div class="form-container">
+
+<head>
+    <link rel="stylesheet" href="css/posts.css">
+</head>
+
+
+<div class="post-container-add">
 
 	<h2>Search for a post</h2>
 	<p>Fill any field to search</p>

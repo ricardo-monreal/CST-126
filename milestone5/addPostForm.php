@@ -26,7 +26,7 @@
 </head>
 
 
-<div class="post-container">
+<div class="post-container-add">
 	<h2>Add New Post</h2>
 	<p>Fill out all of the fields and submit</p><br>
 

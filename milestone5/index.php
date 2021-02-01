@@ -41,7 +41,7 @@
 	            if (isset($_GET['pageNumber']))
 		            $menuChoice = $_GET['pageNumber'];
 	            else
-		            $menuChoice = 0;
+		            $menuChoice = 4;
 
 	            if ( $_SESSION['USERNAME']) {
 		            require_once 'main.php';
@@ -56,6 +56,9 @@
 			            case 3:
 				            require_once 'showAdminPage.php';
 				            break;
+                        case 4:
+                            require_once 'showPosts.php';
+                            break;
 
 		            }
 	            }
@@ -67,6 +70,7 @@
 
             ?>
             </div>
+
 
     <?php include('footer.php'); ?>
 </html>

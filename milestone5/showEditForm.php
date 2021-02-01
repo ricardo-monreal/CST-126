@@ -40,7 +40,7 @@
 </head>
 
 <!-- Form to edit posts, filled with info from database -->
-<div class="post-container">
+<div class="post-container-add">
 	<h2>Edit A Post</h2>
 	<p>Fill out all of the fields and submit</p><br>
 

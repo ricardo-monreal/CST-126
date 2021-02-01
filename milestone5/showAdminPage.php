@@ -3,15 +3,21 @@
  * Author: Ricardo Monreal
  * Date: January 31, 2021
  -->
-<style>
-    .post-container {
-        text-align: center;
-    }
-    button {
-        width: 100px;
-    }
+<head>
 
-</style>
+    <link rel="stylesheet" href="css/posts.css">
+
+    <style>
+        .post-container {
+            text-align: center;
+        }
+        button {
+            width: 100px;
+        }
+
+    </style>
+</head>
+
 <?php
     session_start();
 	require_once 'db_connector.php';
@@ -31,21 +37,24 @@
 			while ($row = mysqli_fetch_assoc($result)){
                 ?>
                     <div class="post-container"><?php
-				echo "Post ID:" . $row['idblog_posts'] . "<br>";
-				echo "Post Title: " . $row['blog_post_title'] . "<br>";
-				echo "Post Body: " . "<br>" . $row['blog_post'] . "<br>";
+				echo "Post ID:" . $row['idblog_posts'] . "<br>" . "<hr>";
+				echo "Post Title: " . $row['blog_post_title'] . "<br>" . "<hr>";
+				echo "Post Body: " . "<br>" . $row['blog_post'] . "<br>" . "<hr>";
 	                    ?></div>
                 <?php
 				?>
                 <!-- Admin actions redirects -->
-                <form action="showEditForm.php">
-                    <input type="hidden" name="postID" value="<?php echo $row['idblog_posts'];?>">
-                    <button type="submit">Edit</button>
-                </form>
-				<form action="processDeletePost.php">
-					<input type="hidden" name="postID" value="<?php echo $row['idblog_posts'];?>">
-					<button type="submit">Delete</button>
-				</form>
+                <div>
+                    <form action="showEditForm.php">
+                        <input type="hidden" name="postID" value="<?php echo $row['idblog_posts'];?>">
+                        <button type="submit">Edit</button>
+                    </form>
+                    <form action="processDeletePost.php">
+                        <input type="hidden" name="postID" value="<?php echo $row['idblog_posts'];?>">
+                        <button type="submit">Delete</button>
+                    </form>
+                </div>
+
 
 
 				<?php
