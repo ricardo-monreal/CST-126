@@ -3,6 +3,17 @@
  * Author: Ricardo Monreal
  * Date: January 31, 2021
  -->
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    h2 {
+        text-align: center;
+    }
+</style>
+
+<?php include('header.php'); ?>
+
+
 <?php
 	require_once 'db_connector.php';
 
@@ -14,7 +25,9 @@
 	if ($link){
 		$result = mysqli_query($link, $sql_statement);
 		if ($result) {
-			echo "Deleted item " . $postToDelete . "<br>";
+			echo "<h2>Deleted Post: ID = $postToDelete </h2>";
+			header("Refresh: 3; url=index.php");
+			//echo "Deleted post: ID = " . $postToDelete . "<br>";
 		} else {
 			echo "Error with the SQL " . mysqli_error($link);
 		}

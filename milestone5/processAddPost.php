@@ -2,7 +2,7 @@
  * Project: Milestone 5
  * Author: Ricardo Monreal
  * Date: January 31, 2021
- -->>
+ -->
 
 <!DOCTYPE html>
 <html lang="en">
