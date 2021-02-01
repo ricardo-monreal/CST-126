@@ -47,7 +47,7 @@
 	<form action="processEditPost.php">
         <input type="hidden" name="id" value="<?php echo $id;?>">
 		Post Title:<input type="text" name="postTitle" value="<?php echo $post_title; ?>"></input><br>
-		Post Body:<br><textarea id="postBody" rows="10" cols="100" name="postBody"><?php echo $post_title; ?></textarea><br>
+		Post Body:<br><textarea id="postBody" rows="10" cols="100" name="postBody"><?php echo $post_body; ?></textarea><br>
 
 		<button type="submit">Submit Changes</button>
 	</form>
