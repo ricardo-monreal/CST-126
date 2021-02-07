@@ -1,0 +1,38 @@
+
+.post-container {
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    align-items: center;
+    min-height: 300px;
+    padding: 10px 0;
+
+    border-radius: 5px;
+    border: solid 1px #cccccc;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+    background: #ebebeb;
+
+}
+
+p {
+    font-size: 16px;
+}
+h2 {
+    text-align: center;
+}
+
+.post-container-add {
+    text-align: center;
+    max-width: inherit;
+
+    min-height: 500px;
+    padding: 10px 0;
+    margin: 20px 200px auto;
+    border-radius: 5px;
+    border: solid 1px #cccccc;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+    background: #ebebeb;
+
+}
+
+
