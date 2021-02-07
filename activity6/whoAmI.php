@@ -1,7 +1,7 @@
 <!--
- * Project: Activity 4
+ * Project: Activity 6
  * Author: Ricardo Monreal
- * Date: January 20, 2021
+ * Date: February 6, 2021
  *
  -->
 <?php

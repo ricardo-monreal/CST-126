@@ -1,3 +1,9 @@
+<!--
+ * Project: Activity 6
+ * Author: Ricardo Monreal
+ * Date: February 6, 2021
+ *
+ -->
 <?php
 	require_once('utility.php');
 

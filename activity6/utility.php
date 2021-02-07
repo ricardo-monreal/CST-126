@@ -1,3 +1,9 @@
+<!--
+ * Project: Activity 6
+ * Author: Ricardo Monreal
+ * Date: February 6, 2021
+ *
+ -->
 <?php
 	/*
     * Project: Activity 4
@@ -32,7 +38,7 @@
 		if($result->num_rows == 0) {
 			//return;
 			//echo "no results found";
-			echo "<script>alert('No users found!');</script>";
+			echo "<script>alert('$pattern was not found in database!');</script>";
 		}
 		return$result->fetch_all();
 

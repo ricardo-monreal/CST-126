@@ -1,14 +1,11 @@
+<!--
+ * Project: Activity 6
+ * Author: Ricardo Monreal
+ * Date: February 6, 2021
+ *
+ -->
 <?php
 ?>
-<!--
- * Project: Activity 4
- * Author: Ricardo Monreal
- * Date: January 20, 2021
- *
- * This is used as a template file
- -->
-
-
 
 <!DOCTYPE html>
 <html lang="en">
