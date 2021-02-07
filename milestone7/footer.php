@@ -1,7 +1,7 @@
 <!--
- * Project: Milestone 6
+ * Project: Milestone 7
  * Author: Ricardo Monreal
- * Date: January 31, 2021
+ * Date: February 7, 2021
  -->
 <footer class="bg-dark text-center text-lg-start fixed-bottom">
     <!-- Copyright -->

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 01, 2021 at 02:02 AM
+-- Generation Time: Feb 07, 2021 at 06:32 PM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `milestone6`
+-- Database: `milestone7`
 --
 
 -- --------------------------------------------------------

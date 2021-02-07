@@ -47,11 +47,12 @@
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.php?pageNumber=1">Add New Post</a>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="index.php?pageNumber=2">Search Posts</a>
-        </li>
+
         <!-- Menu item will only show for Admin users -->
         <?php if ($_SESSION['role'] == 'admin'):?>
+            <li class="nav-item">
+                <a class="nav-link" href="index.php?pageNumber=2">Search Posts</a>
+            </li>
         <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="index.php?pageNumber=3">Administrator</a>
         </li>
