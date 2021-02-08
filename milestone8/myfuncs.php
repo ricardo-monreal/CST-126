@@ -7,7 +7,7 @@
     // database info
 	$user = 'root';
 	$password = 'root';
-	$db = 'milestone6';
+	$db = 'milestone8';
 	$host = 'localhost';
 
     function dbConnect()
