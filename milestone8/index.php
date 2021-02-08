@@ -17,12 +17,8 @@
 
                 p {
                     text-align: center;
-                    padding-top: 50px;
+                }
 
-                }
-                .container {
-                    padding-top: 50px;
-                }
             </style>
     <?php include('header.php'); ?>
             <div class="container">

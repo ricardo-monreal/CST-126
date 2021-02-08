@@ -19,30 +19,38 @@
 	session_start();
 
 	require_once "db_connector.php";
-
-
-	$postTitle = $_GET['postTitle'];
-	$postBody = $_GET['postBody'];
-	$id = $_GET['id'];
+	// variables to be passed to comments
+	$comments = $_GET['comments'];
+	$post_id = $_GET['post_id'];
 	$user_ID = $_SESSION['ID'];
-	$role = $_SESSION['role'];
 
-	$sql_statement = $sql = "UPDATE `blog_posts` SET `blog_post_title` = '$postTitle' , `blog_post` = '$postBody'
-							 	WHERE `idblog_posts` = '$id'";
+	if ($link && isset($_SESSION['ID']))
+	{
 
-	if ($link) {
+		$sql_statement = "INSERT INTO `comments` (`idcomments`, `comment_text`, `blog_posts_idblog_posts`, 
+                        `users_ID`) VALUES (NULL, '$comments', '$post_id', '$user_ID')";
+
+
+
 		$result = mysqli_query($link, $sql_statement);
 		if ($result){
-			echo "<h2>The post has been updated!</h2>";
+			echo "<h2>Your comment has been added!</h2>";
 			header("Refresh: 3; url=index.php");
-		}
-		else {
+
+		} else {
 			echo "Error in the database. " . mysqli_error($link);
 		}
-	}
-	else {
+} else {
 		echo "Error connecting " . mysqli_connect_error();
-	}
+
+		}
+
+
+
+
+
+
+
 ?>
 <?php include('footer.php'); ?>
 </html>

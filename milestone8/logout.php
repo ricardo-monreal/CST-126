@@ -3,7 +3,7 @@
 
 ?>
 <!--
- * Project: Milestone 7
+ * Project: Milestone 8
  * Author: Ricardo Monreal
  * Date: February 7, 2021
  -->

@@ -1,7 +1,7 @@
 <!--
- * Project: Milestone 6
+ * Project: Milestone 8
  * Author: Ricardo Monreal
- * Date: January 31, 2021
+ * Date: February 7, 2021
  -->
 <head>
     <title>CST-126 Milestone 7</title>
