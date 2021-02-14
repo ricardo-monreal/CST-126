@@ -27,6 +27,12 @@
             <li class="nav-item">
                 <a class="nav-link" href="register.php">Register</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Search</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="superHeroPlay.php">Super Hero</a>
+            </li>
         </ul>
     </div>
 </nav>
