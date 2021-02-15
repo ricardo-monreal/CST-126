@@ -1,7 +1,7 @@
 <!--
- * Project: Milestone 8
+ * Project: Final Project
  * Author: Ricardo Monreal
- * Date: February 7, 2021
+ * Date: February 14, 2021
  -->
 <head>
 	<link rel="stylesheet" href="css/posts.css">
@@ -42,7 +42,7 @@
 			while ($row = mysqli_fetch_assoc($result)){
 				?>
 				<div class="post-container"><?php
-						echo "Post ID: " . $row['idblog_posts'] . "<hr>";
+						//echo "Post ID: " . $row['idblog_posts'] . "<hr>";
 						echo "<h3>" . $row['blog_post_title'] . " by " . ucfirst($row['USERNAME']) . "</h3>" . "<hr>";
 						echo $row['blog_post'] . "<br>";
 					?></div>

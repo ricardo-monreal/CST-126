@@ -1,7 +1,7 @@
 <!--
- * Project: Milestone 8
+ * Project: Final Project
  * Author: Ricardo Monreal
- * Date: February 7, 2021
+ * Date: February 14, 2021
  -->
 <?php
 	ini_set('display_errors', 1);
@@ -11,7 +11,7 @@
 	$servername = "localhost";
 	$username = "root";
 	$password = "root";
-	$dbname = "milestone8";
+	$dbname = "cst126_final";
 
 // Create connection
 	$link = mysqli_connect($servername, $username, $password, $dbname);

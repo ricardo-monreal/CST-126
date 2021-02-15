@@ -1,9 +1,10 @@
 <?php
 ?>
 <!--
- * Project: Milestone 8
+ * Project: Final Project
  * Author: Ricardo Monreal
- * Date: February 7, 2021
+ * Date: February 14, 2021
+
 
 
  NOT USED!!!

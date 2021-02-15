@@ -1,7 +1,7 @@
 <!--
- * Project: Milestone 8
+ * Project: Final Project
  * Author: Ricardo Monreal
- * Date: February 7, 2021
+ * Date: February 14, 2021
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +42,8 @@ if (empty($_POST['FIRST_NAME'])) {
     } else {
 
 
-        echo "Hello " . $_POST["FIRST_NAME"] . $_POST["LAST_NAME"] . ": Your username is " . $_POST["USERNAME"] . "<br>";
+       // echo "Hello " . $_POST["FIRST_NAME"] . $_POST["LAST_NAME"] . ": Your username is " . $_POST["USERNAME"] .
+        // "<br>";
 
 
 
@@ -50,17 +51,27 @@ if (empty($_POST['FIRST_NAME'])) {
 
     $link = dbConnect();
 
-    //$query = "INSERT INTO users (FIRST_NAME, LAST_NAME, USERNAME, PASSWORD) VALUES ('$FIRST_NAME', '$LAST_NAME', '$USERNAME', '$PASSWORD')";
+    //verify if user already exist in database, if not then register
+	$sql="SELECT * FROM users WHERE (USERNAME='$USERNAME');";
+	$res=mysqli_query($link,$sql);
+	if (mysqli_num_rows($res) > 0) {
+	    echo "<h2>This username already exists</h2>";
 
-	$query = "INSERT INTO users (`ID`, `FIRST_NAME`, `LAST_NAME`, `USERNAME`, `PASSWORD`) VALUES (NULL, '$FIRST_NAME', '$LAST_NAME', '$USERNAME', '$PASSWORD')";
-    if (mysqli_query($link, $query)) {
-        echo "New user recorded successfully!";
-	    header("Refresh: 3; url=index.php");
-    } else {
-        echo "Error: " . $query . "<br>" . mysqli_errno($link);
+		header("Refresh: 3; url=index.php");
+	} else {
+		$query = "INSERT INTO users (`ID`, `FIRST_NAME`, `LAST_NAME`, `USERNAME`, `PASSWORD`) VALUES (NULL, '$FIRST_NAME', '$LAST_NAME', '$USERNAME', '$PASSWORD')";
+		if (mysqli_query($link, $query)) {
+			echo "<h2>New user recorded successfully!</h2>";
+			header("Refresh: 3; url=index.php");
+		} else {
+			echo "Error: " . $query . "<br>" . mysqli_errno($link);
+		}
+
+		mysqli_close($link);
     }
 
-    mysqli_close($link);
+
+
 }
 
 ?>

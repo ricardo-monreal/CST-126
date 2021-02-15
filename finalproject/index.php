@@ -1,9 +1,9 @@
 <?php
 ?>
 <!--
- * Project: Milestone 7
+ * Project: Final Project
  * Author: Ricardo Monreal
- * Date: February 7, 2021
+ * Date: February 14, 2021
  -->
 <!DOCTYPE html>
 <html lang="en">
@@ -18,16 +18,26 @@
                 p {
                     text-align: center;
                 }
+                .center-image{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                    padding-top: 100px;
+                    padding-bottom: 50px;
+                }
 
             </style>
     <?php include('header.php'); ?>
             <div class="container">
+                <img src='images/gcu.svg' alt='logo' class="center-image"/>
             <?php
 
 	            session_start();
 
 	            if (!isset($_SESSION['USERNAME'])) {
-		            echo "<h1>Welcome to the CST-126 Milestone Blog!</h1>";
+
+		            echo "<h1>Welcome to the CST-126 Blog!</h1>";
 		            '<br>';
 		            '<br>';
 		            echo "<p>Please login <a href='login.php'>here</a> - Don't have an account? Register <a href='register.php'>here</a></p>";

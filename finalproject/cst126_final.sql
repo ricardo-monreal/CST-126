@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 08, 2021 at 02:48 AM
+-- Generation Time: Feb 15, 2021 at 01:59 AM
 -- Server version: 5.7.24
 -- PHP Version: 7.4.1
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `milestone8`
+-- Database: `cst126_final`
 --
 
 -- --------------------------------------------------------
@@ -40,12 +40,9 @@ CREATE TABLE `blog_posts` (
 --
 
 INSERT INTO `blog_posts` (`idblog_posts`, `blog_post_title`, `blog_post`, `users_ID`) VALUES
-(1, 'Test Post + Edit Test', '<p>Test Post + Edit Test</p>', 14),
-(4, 'test', 'testing database connection', 22),
-(5, 'test 2', 'testing redirecting to index page', 22),
-(6, 'Test HTML Editor', '<p><strong>Hello!</strong></p>\r\n<p>Testing HTML editor. </p>\r\n<p>&nbsp;</p>', 22),
-(7, 'Dwight Test', '<p>Hello this is a test by Dwight!</p>', 26),
-(8, 'Dwight Test 2', '<p>Whoa!? A second test?</p>', 26);
+(15, 'PHP and MySQL are so much fun!', '<p>I had a lot of fun in this class.</p>', 42),
+(16, 'Star Wars movies are the best!', '<p>Not even Trekkie can disagree with that!</p>', 43),
+(18, 'Hello World!', '<p>I am new to PHP!</p>', 43);
 
 -- --------------------------------------------------------
 
@@ -65,13 +62,8 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`idcomments`, `comment_text`, `blog_posts_idblog_posts`, `users_ID`) VALUES
-(1, 'I see you like The Office', 7, 14),
-(2, 'Testing comments!', 6, 25),
-(3, 'My very first comment!', 4, 14),
-(4, 'I see you like the office!', 7, 14),
-(5, 'Have you been to Costa Rica?', 1, 14),
-(6, 'Michael, You dont know the power of the dark side!', 6, 22),
-(7, 'Do or do not, there is not try.', 6, 29);
+(13, 'Which Star Wars movie is your favorite?', 16, 42),
+(14, 'My favorite is Episode IV: Empire Strikes Back', 16, 43);
 
 -- --------------------------------------------------------
 
@@ -93,14 +85,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`ID`, `FIRST_NAME`, `LAST_NAME`, `USERNAME`, `PASSWORD`, `role`) VALUES
-(14, 'Toby ', 'Flenderson', 'toby', 'pass7', NULL),
-(17, 'Meridith', 'Palmer', 'meridith', 'pass', NULL),
-(21, 'testone', 'test', 'testone', 'pass', NULL),
-(22, 'Darth', 'Vader', 'vader', 'pass', NULL),
-(25, 'Michael', 'Scott', 'michael', 'pass', 'admin'),
-(26, 'Dwight', 'Schrute', 'dwight', 'pass', NULL),
-(28, 'admin', '', 'admin', 'root', 'admin'),
-(29, 'yoda', 'jedi', 'yoda', 'pass', NULL);
+(41, '', '', 'admin', 'pass', 'admin'),
+(42, 'Ricardo', 'Monreal', 'ricardo', 'pass', NULL),
+(43, 'Luke', 'Skywalker', 'luke', 'pass', NULL);
 
 --
 -- Indexes for dumped tables
@@ -135,19 +122,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `blog_posts`
 --
 ALTER TABLE `blog_posts`
-  MODIFY `idblog_posts` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `idblog_posts` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `idcomments` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `idcomments` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- Constraints for dumped tables
